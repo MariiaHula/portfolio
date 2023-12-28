@@ -1,0 +1,93 @@
+.justify-content-end {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.custom-link,
+.custom-link:visited,
+.custom-link:hover,
+.custom-link:active {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  transition: 0.5s color ease;
+  text-decoration: none;
+  color: #81b3d2;
+  font-size: 1.5em;
+}
+
+.custom-link:hover,
+.custom-link:focus,
+.nav-link:hover,
+.nav-link:focus {
+  color: #5cdb80;
+}
+
+.custom-link.before:before,
+.custom-link.after:after,
+.nav-link.before:before,
+.nav-link.after:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.custom-link.before:before,
+.nav-link.before:before {
+  top: -0.25em;
+}
+
+.custom-link.after:after,
+.nav-link.before:after {
+  bottom: -0.25em;
+}
+
+.custom-link.before:before,
+.custom-link.after:after {
+  height: 4px;
+  height: 0.35rem;
+  width: 0;
+  background: #5cdb80;
+}
+
+.custom-link.third:after,
+.custom-link.after:after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.custom-link.before:hover:before,
+.custom-link.after:hover:after {
+  width: 100%;
+}
+
+.custom-link:after {
+  transition: 0.25s all ease 0.4s;
+}
+
+.custom-link:before,
+.custom-link:after {
+  width: 100%;
+}
+
+.icon-logo {
+  width: 20px;
+  height: 20px;
+}
+.wrapper-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 992px) {
+  .collapse {
+    justify-content: flex-end;
+  }
+}
