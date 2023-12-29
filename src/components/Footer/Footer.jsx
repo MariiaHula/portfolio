@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <>
-      <div>
+      <div id="contacts">
         <a
           href="https://www.linkedin.com/in/mariia-hula-b3a3501b7/"
           onClick={(e) => {

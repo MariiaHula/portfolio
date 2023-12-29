@@ -1,33 +1,71 @@
-import Carousel from "react-bootstrap/Carousel";
-// import ExampleCarouselImage from "components/ExampleCarouselImage";
+import tracker from "../../assets/images/tracker.jpg";
+import phonebook from "../../assets/images/phonebook.jpg";
+import tasty from "../../assets/images/tasty.jpg";
+import { Container } from "react-bootstrap";
+import "./Work.css";
 
 const Work = () => {
   return (
-    <Carousel fade>
-      <Carousel.Item>
-        {/* <ExampleCarouselImage text="First slide" /> */}
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        {/* <ExampleCarouselImage text="Second slide" /> */}
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        {/* <ExampleCarouselImage text="Third slide" /> */}
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <section id="work">
+      <Container className="container">
+        <div
+          id="carouselExampleSlidesOnly"
+          className="carousel slide"
+          data-ride="carousel"
+        >
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <h1>Expenstracker app</h1>
+              <p>Team project</p>
+              <a
+                href="https://nadiyniy.github.io/money_makers/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                view
+              </a>
+              <img
+                src={tracker}
+                className="d-block w-100"
+                alt="Expenstracker app"
+              />
+            </div>
+            <div className="carousel-item">
+              <h1>Expenstracker app</h1>
+              <p>Team project</p>
+              <a
+                href="https://nadiyniy.github.io/money_makers/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                view
+              </a>
+              <img
+                src={phonebook}
+                className="d-block w-100"
+                alt="Phonebook app"
+              />
+            </div>
+            <div className="carousel-item">
+              <h1>Expenstracker app</h1>
+              <p>Team project</p>
+              <a
+                href="https://nadiyniy.github.io/money_makers/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                view
+              </a>
+              <img
+                src={tasty}
+                className="d-block w-100"
+                alt="Tasty Treads app"
+              />
+            </div>
+          </div>
+        </div>
+      </Container>
+    </section>
   );
 };
 
