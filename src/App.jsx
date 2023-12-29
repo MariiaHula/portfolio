@@ -20,7 +20,7 @@ const router = createBrowserRouter(
 );
 
 const App = () => {
-  return <RouterProvider router={router} basename="/portfolio" />;
+  return <RouterProvider router={router} />;
 };
 
 export default App;
