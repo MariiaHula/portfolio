@@ -17,7 +17,7 @@ const Work = () => {
             loading="lazy"
           />
           <div className={css.workWrapper}>
-            <h3 className={css.titleWork}>Expenstracker app</h3>
+            <h1 className={css.titleWork}>Expenstracker app</h1>
             <p>
               The app makes it easy for you to take control of your finances!
               With intuitive features, it simplifies the process of tracking and
@@ -47,7 +47,7 @@ const Work = () => {
             loading="lazy"
           />
           <div className={css.workWrapper}>
-            <h3 className={css.titleWork}>Phonebook app</h3>
+            <h1 className={css.titleWork}>Phonebook app</h1>
             <p>
               The application, with which it is easy to search and quickly save
               the necessary contacts! Simple search and editing.
@@ -75,7 +75,7 @@ const Work = () => {
             loading="lazy"
           />
           <div className={css.workWrapper}>
-            <h3 className={css.titleWork}>Tasty Treats app</h3>
+            <h1 className={css.titleWork}>Tasty Treats app</h1>
             <p>
               A useful application for finding the best recipes. Just save to
               your favorite recipes and watch a detailed step-by-step guide to
