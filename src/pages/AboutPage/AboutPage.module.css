@@ -1,0 +1,125 @@
+.iconChestnut {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: #5cdb80;
+  fill: #5cdb80;
+}
+.wrapperAboutMe {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sectionAboutMe {
+  text-align: center;
+  order: 1;
+  background-color: #fff;
+  padding: 20px;
+
+  margin-bottom: 20px;
+}
+
+.sectionAboutMe span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.sectionAboutMe p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Стилі для другої частини "Сайд бар" */
+.sectionSidebar {
+  text-align: center;
+  order: 2;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Стилі для списків */
+
+.listTitle {
+  color: #5cdb80;
+  margin-bottom: 10px;
+}
+.list {
+  list-style: none;
+  padding: 0;
+}
+.list li {
+  margin-bottom: 5px;
+}
+.border {
+  margin: 0 auto;
+  max-width: 500px;
+  border-bottom: 2px solid rgb(228, 228, 228);
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+/* Медіа-запити для респонсивності */
+@media screen and (min-width: 768px) {
+  .wrapperAboutMe {
+    margin-top: 40px;
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sectionAboutMe {
+    width: 60%;
+    margin-right: 20px;
+    text-align: start;
+  }
+  .sectionAboutMe p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .sectionSidebar {
+    text-align: start;
+    width: 35%;
+  }
+  .border {
+    max-width: 680px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sectionAboutMe {
+    width: 65%;
+  }
+  .sectionAboutMe p {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .sectionAboutMe span {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .sectionSidebar {
+    width: 30%;
+  }
+  .border {
+    max-width: 920px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sectionAboutMe {
+    width: 70%;
+  }
+
+  .sectionSidebar {
+    width: 25%;
+  }
+  .border {
+    max-width: 1100px;
+  }
+}
