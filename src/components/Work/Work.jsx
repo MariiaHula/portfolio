@@ -60,7 +60,7 @@ const Work = () => {
           className="mySwiper"
         >
           {slideData?.map((app) => (
-            <SwiperSlide key={app.id}>
+            <SwiperSlide key={app.id} className="pagination">
               <div className={css.wrapperSection}>
                 <img
                   src={app.image}

@@ -83,7 +83,11 @@
   width: 100%;
   height: 100%;
 }
-
+.swiper-pagination-bullet
+  .swiper-pagination-bullet-active
+  .swiper-pagination-bullet-active-main {
+  background: #5cdb80 !important;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -101,6 +105,3 @@
   height: 100%;
   object-fit: cover;
 }
-/* .swiperPaginationBullet {
-  color: #5cdb80;
-} */
