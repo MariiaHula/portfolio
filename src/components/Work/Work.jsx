@@ -4,13 +4,13 @@ import tasty from "../../assets/images/tasty.jpg";
 import movies from "../../assets/images/movies.jpg";
 
 import { Container, Nav } from "react-bootstrap";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+
 import css from "./Work.module.css";
 import sprite from "../../assets/sprite.svg";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+import { register } from "swiper/element/bundle";
+register();
 
 const Work = () => {
   const [slideData] = useState([
@@ -48,19 +48,35 @@ const Work = () => {
     },
   ]);
 
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    const swiperContainer = swiperRef.current;
+    const params = {
+      pagination: true,
+      loop: true,
+      injectStyles: [
+        `
+          .swiper-pagination-bullet{
+            background-color: #5cdb80;
+          }
+          .swiper-pagination-bullet-active{
+            scale: 1.2;
+          }
+      `,
+      ],
+    };
+
+    Object.assign(swiperContainer, params);
+    swiperContainer.initialize();
+  }, []);
+
   return (
     <section id="work" className={css.section}>
       <Container>
-        <Swiper
-          pagination={{
-            dynamicBullets: true,
-          }}
-          loop={true}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
+        <swiper-container ref={swiperRef} init="false">
           {slideData?.map((app) => (
-            <SwiperSlide key={app.id} className="pagination">
+            <swiper-slide key={app.id}>
               <div className={css.wrapperSection}>
                 <img
                   src={app.image}
@@ -84,9 +100,9 @@ const Work = () => {
                   </Nav.Link>
                 </div>
               </div>
-            </SwiperSlide>
+            </swiper-slide>
           ))}
-        </Swiper>
+        </swiper-container>
 
         <div className={css.border}></div>
       </Container>
