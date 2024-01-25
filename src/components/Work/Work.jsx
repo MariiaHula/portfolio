@@ -2,6 +2,7 @@ import tracker from "../../assets/images/tracker.jpg";
 import phonebook from "../../assets/images/phonebook.jpg";
 import tasty from "../../assets/images/tasty.jpg";
 import movies from "../../assets/images/movies.jpg";
+import rental from "../../assets/images/rental.jpg";
 
 import { Container, Nav } from "react-bootstrap";
 
@@ -45,6 +46,14 @@ const Work = () => {
       description:
         "A useful application for finding the best recipes. Just save to your favorite recipes and watch a detailed step-by-step guide to cooking. A rating system and the most popular recipes at your fingertips.",
       project: "https://mariiahula.github.io/js-project-team-2/",
+    },
+    {
+      id: "5",
+      image: `${rental}`,
+      title: "RentaCarUA app",
+      description:
+        "It's a car rental app that helps you find and reserve a car that fits any need.",
+      project: "https://renta-car-ua.vercel.app/",
     },
   ]);
 
